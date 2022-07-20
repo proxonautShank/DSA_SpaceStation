@@ -32,9 +32,7 @@ solution is `9`.
   ```
   solution is `5`.
 
-```
-Solution will be posted on 20th July
-```
+[Click for Solution](https://github.com/proxonautShank/DSA_SpaceStation/tree/main/Solution%20(4%20%26%205))
 
 ---
 
@@ -49,6 +47,4 @@ Write a function to return an array containing all of its longest strings.
 - Input `["abc", "eeee", "abcd", "dcd"]`, output `["eeee", "abcd"]`
 - Input `["lbgwyqkry"]`, output `["lbgwyqkry"]`
 
-```
-Solution will be posted on 20th July
-```
+[Click for Solution](https://github.com/proxonautShank/DSA_SpaceStation/tree/main/Solution%20(4%20%26%205))
