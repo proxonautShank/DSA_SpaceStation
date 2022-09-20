@@ -5,7 +5,21 @@ Write a function to sort a given array in ascending order but don't change the i
 `solution(inputArray) = [-1, 150, 160, 170, -1, -1, 180, 190]`.
 
 ```
-Solution will be posted next week
+func sol(n: [Int]) -> [Int] {
+    var ref = n.filter{$0 != -1}.sorted()
+    var res: [Int] = []
+    
+    for ele in n {
+        if ele != -1 {
+            res += [-1]
+        }else {
+            res += [ref[0]]
+            ref.removeFirst()
+        }
+    }
+    
+    return res
+}
 ```
 ---
 
@@ -19,6 +33,17 @@ Given a even number of digits. Write a function to find the sum of the first hal
 `solution(n) = false`.
 
 ```
-Solution will be posted next week
+func sol(n: String) -> Bool {
+    var (first, sec) = (0,0)
+    for (i, ele) in n.enumerated() {
+        if i < n.count/2 {
+            first += Int(String(ele))!
+        }else {
+            sec += Int(String(ele))!
+        }
+    }
+    
+    return first == sec
+}
 ```
 ---
