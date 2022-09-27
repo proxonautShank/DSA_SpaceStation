@@ -12,7 +12,16 @@ Given your and your friend's arms' lifting capabilities find out if you two are 
 `solution(yourLeft, yourRight, friendsLeft, friendsRight) = false`.
 
 ```
-Solution will be uploaded nex week
+func solution(yourLeft: Int, yourRight: Int, friendsLeft: Int, friendsRight: Int) -> Bool {
+
+    if yourLeft == friendsLeft {
+        return yourRight == friendsRight
+    }else if yourLeft == friendsRight {
+        return yourRight == friendsLeft
+    }else {
+        return false
+    }
+}
 ```
 ---
 
@@ -26,6 +35,13 @@ Given an array of integers, find the maximal absolute difference between any two
 `solution(inputArray) = 5`.
 
 ```
-Solution will be uploaded nex week
+func solution(inputArray: [Int]) -> Int {
+    var diff = 0
+    for idx in 0..<inputArray.count-1 {
+        let val = abs(inputArray[idx] - inputArray[idx+1])
+        diff = diff < val ? val : diff
+    }
+    return diff
+}
 ```
 ---
