@@ -11,6 +11,7 @@ Given your and your friend's arms' lifting capabilities find out if you two are 
 - For `yourLeft = 15`, `yourRight = 10`, `friendsLeft = 15`, and `friendsRight = 9`, the output should be
 `solution(yourLeft, yourRight, friendsLeft, friendsRight) = false`.
 
+###### Solution
 ```
 func solution(yourLeft: Int, yourRight: Int, friendsLeft: Int, friendsRight: Int) -> Bool {
 
@@ -34,6 +35,7 @@ Given an array of integers, find the maximal absolute difference between any two
 - For `inputArray = [1, 6, 7, 10]`, the output should be
 `solution(inputArray) = 5`.
 
+###### Solution
 ```
 func solution(inputArray: [Int]) -> Int {
     var diff = 0
