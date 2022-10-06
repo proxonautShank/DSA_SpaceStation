@@ -6,7 +6,9 @@ Given an array of integers, replace all the occurrences of `elemToReplace` with 
 
 ###### Solution
 ```
-Will be posted next week
+func solution(inputArray: [Int], elemToReplace: Int, substitutionElem: Int) -> [Int] {
+    return inputArray.map{$0 == elemToReplace ? substitutionElem : elemToReplace}
+}
 ```
 ---
 
@@ -23,6 +25,15 @@ Given a string, find out if it satisfies the IPv4 address naming rules.
 
 ###### Solution
 ```
-Will be posted next week
+func solution(inputString: String) -> Bool {
+    let a = inputString.components(separatedBy: ".")
+    guard a.count == 4 else {return false}
+    return a.map { str in
+    if str.count > 1 && str.first! == "0" {
+        return 0
+    }
+    return 0...255 ~= Int(str) ?? -1 ? 1 : 0
+}.reduce(0){$0 + $1} == 4
+}
 ```
 ---
