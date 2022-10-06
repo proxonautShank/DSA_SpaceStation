@@ -6,5 +6,6 @@
 - [10th Aug 2022](https://github.com/proxonautShank/DSA_SpaceStation/blob/main/Questions/10th%20Aug.md)
 - [21th Sep 2022](https://github.com/proxonautShank/DSA_SpaceStation/blob/main/Questions/21th%20Sep.md)
 - [27th Sep 2022](https://github.com/proxonautShank/DSA_SpaceStation/blob/main/Questions/27th%20Sep.md)
+- [4th Oct 2022](https://github.com/proxonautShank/DSA_SpaceStation/blob/main/4th%20Oct.md)
 
 ### Get prepared more Asteroids☄️ are coming...
