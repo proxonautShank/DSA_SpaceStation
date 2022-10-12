@@ -12,7 +12,9 @@ Check if the given string is a correct variable name.
 
 ###### Solution
 ```
-Will be posted next week
+func solution(name: String) -> Bool {
+    return name.range(of: "^([a-zA-Z]|_)([a-zA-Z0-9]|\\_)*$", options: .regularExpression, range: nil, locale: nil) != nil
+}
 ```
 ---
 
@@ -27,6 +29,11 @@ Check if all digits of the given integer are even.
 
 ###### Solution
 ```
-Will be posted next week
+func solution(n: Int) -> Bool {
+    for c in String(n) {
+        guard Int(String(c))!%2 == 0 else {return false}
+    }
+    return true
+}
 ```
 ---
