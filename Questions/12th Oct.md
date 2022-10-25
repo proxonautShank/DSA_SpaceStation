@@ -7,7 +7,7 @@ Check if the given string is a correct variable name.
 - For `inputString = "big"`, the output should be `solution(inputString) = "cjh"`.
 
 ###### Solution
-```
+```swift
 func sol(input: String) -> String {
     let r = input.map { c in
         var v = UnicodeScalar(String(c))!.value + 1
@@ -30,7 +30,7 @@ Given an unsorted integer array, find a pair with the given sum in it.
 `solution(nums) = (7, 5)`.
 
 ###### Solution
-```
+```swift
 func sol(input: [Int], target: Int) -> (Int, Int) {
     
     for e in input {
