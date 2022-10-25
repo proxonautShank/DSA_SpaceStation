@@ -8,7 +8,15 @@ Check if the given string is a correct variable name.
 
 ###### Solution
 ```
-Will be posted next week
+func sol(input: String) -> String {
+    let r = input.map { c in
+        var v = UnicodeScalar(String(c))!.value + 1
+        v = v == 123 ? 97 : v
+        return String(UnicodeScalar(v)!)
+    }
+    
+    return r.joined(separator: "")
+}
 ```
 ---
 
@@ -23,11 +31,14 @@ Given an unsorted integer array, find a pair with the given sum in it.
 
 ###### Solution
 ```
-func solution(n: Int) -> Bool {
-    for c in String(n) {
-        guard Int(String(c))!%2 == 0 else {return false}
+func sol(input: [Int], target: Int) -> (Int, Int) {
+    
+    for e in input {
+        let i = target - e
+        if input.contains(i) { return (e, i) }
     }
-    return true
+
+    return (0,0)
 }
 ```
 ---
